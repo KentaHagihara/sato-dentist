@@ -128,7 +128,7 @@ header{
     letter-spacing: 2px;
 }
 .header-right li{
-    margin-left: 20px;
+    margin-left: 10px;
     font-size: 0.8rem;
 }
 .web-appointment{
@@ -175,11 +175,18 @@ header{
     position: fixed;
     transition: all 1s;
 }
+.header-middle-right-fix{
+    position: fixed;
+    top: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 
 
 
 /*schrool*/
-.schroll{
+.scroll{
     background-color: white;
     padding: 30px 60px;  
     border-radius: 60px;
@@ -194,20 +201,19 @@ header{
     position: fixed;
     transition: all 1s;
 }
-.schroll img{
+.scroll img{
     width: 200px;
 }
-.schroll-right{
+.scroll-right{
     align-items: center;
 }
-.schroll-right li{
+.scroll-right li{
     margin-right: 30px;
     font-size: 0.8rem;
 }
 
 .header-middle{
     align-items: flex-end;
-    margin: 250px 0 0 100px;
     color: white;
     font-weight: bold;
     overflow: hidden;
