@@ -62,22 +62,56 @@ h2{
     display: none;
     transition: all 1s;
 }
+
+
+/*home*/
+.home{
+    background-color: white;
+    width: 100%;
+    margin-top: 3.5%;
+    position: relative;
+}
+.home-background{
+    background-image: url(../images/home_slide1.jpg);
+    background-size: cover;
+    background-position: center top;
+    height: 135vh;
+    border-radius: 100px;
+    margin: 20px auto 0;
+    max-width: 1500px;
+    max-height: 900px;
+}
+.home-text{
+    position: absolute;
+    top: 40%;
+    left: 180px;
+    color: white;
+}
+.home-text-explanation{
+    margin-top: 20px;
+    letter-spacing: 4px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+/*home*/
+
+
 /*header*/
 header{
-    z-index: 10;
-    padding: 0 30px;
     width: 100%;
-    position: absolute;
-    top: 0;
 }
 .header-top{
     margin: 0 auto;
+    z-index: 10;
 }
 .header-top-disappear{
     display: flex;
     justify-content: right;
     margin: 10px 20px 0;
     align-items: center;
+    position: absolute;
+    top: 0;
+    right: 30px;
 }
 .head-consult{
     position: relative;
@@ -117,8 +151,11 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%;
+    width: 100%;
     transition: all 1s;
+    padding: 0 30px;
+    position: absolute;
+    top: 30px;
 }
 .header-right{
     align-items: center;
@@ -159,28 +196,8 @@ header{
 }
 .to-left{
     transform: translateX(-40px);
+    transform: translateY(50px);
     transition: all 1s;
-}
-.schroll{
-    background-color: white;
-    padding: 30px 60px;  
-    border-radius: 60px;
-    align-items: center;  
-    margin: 0 auto;
-    max-width: 1500px;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    right: 0;
-    position: fixed;
-    transition: all 1s;
-}
-.header-middle-right-fix{
-    position: fixed;
-    top: 0;
-    top: 0;
-    left: 0;
-    right: 0;
 }
 
 
@@ -200,6 +217,7 @@ header{
     right: 0;
     position: fixed;
     transition: all 1s;
+    z-index: 10000;
 }
 .scroll img{
     width: 200px;
@@ -216,17 +234,37 @@ header{
     align-items: flex-end;
     color: white;
     font-weight: bold;
-    overflow: hidden;
     transition: all 1s;
+    position: absolute;
+    top: 500px;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.header-middle-left{
+    margin-left: 100px;
 }
 .header-middle-right{
     margin-left: -10%;
     z-index: 10;
     background-color: white;
-    border-radius: 50px;
-    padding: 20px 1000px 20px 30px;
+    border-radius: 50px 0 0 50px; /*右側の角は削らずに、そしてpaddingも減らす*/
+    padding: 20px 50px 20px 30px;
+    justify-content: right;
     align-items: center;
     box-shadow: 0 0 50px rgba(47, 64, 80, .5);
+
+}
+.fix-hmr{
+    position: fixed;
+    top: 180px;
+    margin-left: -90%;
+    background-color: #062b40;
+    right: -48vw;
+}
+.fix-hmr:hover{
+    right: 30px;
+    box-shadow: unset;
 }
 .bg-white{
     color: orange;
@@ -290,38 +328,6 @@ th,td{
     font-size: 0.8rem;
 }
 /*header*/
-
-
-/*home*/
-.home{
-    background-color: white;
-    width: 100%;
-    margin-top: 3.5%;
-    position: relative;
-}
-.home-background{
-    background-image: url(../images/home_slide1.jpg);
-    background-size: cover;
-    background-position: center top;
-    height: 135vh;
-    border-radius: 100px;
-    margin: 20px auto 0;
-    max-width: 1500px;
-    max-height: 900px;
-}
-.home-text{
-    position: absolute;
-    top: 40%;
-    left: 180px;
-    color: white;
-}
-.home-text-explanation{
-    margin-top: 20px;
-    letter-spacing: 4px;
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-/*home*/
 
 
 /*content*/
